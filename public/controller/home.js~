@@ -1,0 +1,29 @@
+/*app.controller ( 'home' , function( $scope , Ball){
+      var ball = new Ball();
+      var balls =  new $p.ArrayList();
+
+      $scope.setup = function setup() {
+        $scope.size(500, 500);
+        $scope.background(100);
+}
+
+$scope.draw = function draw() {
+        $scope.background(100);
+        if (balls.size() > 0) {
+          for (var i =  0;  i < balls.size();  i++) {
+            balls.get(i).Ball.update();
+            balls.get(i).Ball.draw();
+          }
+        }
+      }
+
+
+$scope.mouseClicked = function mouseClicked() {
+        var b =  new Ball($p.mouseX, $p.mouseY);
+      	balls.add(b);
+      }
+
+
+
+});
+*/

@@ -7,22 +7,59 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+
+
+<script src= "bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src = "app.js"></script>
+<script src = "controller/home.js"></script>
+
+
+<script src="web/processing.js"></script>
+<script src="web/javascript.js"></script>
+
+
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
 <body>
-  <div ui-view ng-app = "content" >
-    <script src = "processing.js"></script>
-  </div>
-  <script src= "bower_components/angular/angular.min.js"></script>
-  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src = "app.js"></script>
-  <script src = "controller/home.js"></script>
-  <script src = "processing.js"></script>
-  <script src = "hello.pde"></script>
+   <div ui-view ng-app = "content" ></div>
+
+
+<!-- <canvas id="canvas" width="2100" height="900" style="border: 1px solid #d3d3d3;">
+  <draw-circle x="500" y="500"></draw-circle>
+  <draw-circle x="200" y="500"></draw-circle>
+</canvas> -->
+
+<!-- <div ng-app="app">
+       <div class="container">
+         <div class="row">
+           <div class="col-6">
+               <liquid-tank canvas-id="canvas-1" width="500" height="500"></liquid-tank>
+           </div>
+         </div>
+       </div>
+     </div> -->
+
+<p>Index.html</p>
+
+<!--  <canvas id='dsanim' data-processing-sources="web/constants.pde web/animation.pde web/animationinstruction.pde web/animationobject.pde web/bubble.pde web/animatedcode.pde web/animatedarray.pde web/utils.pde web/indicator.pde web/splitter.pde web/controls.pde"></canvas>
+  <button onclick="playSketch();">Play</button>
+<button onclick="pauseSketch();">Pause</button>
+<button onclick="stepSketch();">Step</button>
+<button onclick="restartSketch();">restart</button>
+Speed:<input type="range" name="speed" min="1" max="10" value="5" onchange="changeSpeed(this.value)">
+-->
+
+<!--  <script src="processing.js"></script>
+  <canvas data-processing-sources="hello.pde"></canvas> -->
+
+<!--  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script> -->
+
+<!-- <script language="javascript" type="text/javascript" src="sketch.js"></script> -->
 </body>
 </html>
