@@ -4,7 +4,8 @@ var bound = false;
 
 // bind JS to the p5 sketch for two way communication
 function bindJavaScript() {
-  if(Processing) { pjs = Processing.getInstanceById("dsanim"); }
+  if(Processing) { 
+    pjs = Processing.getInstanceById("dsanim"); }
   if (pjs !== undefined && pjs.bindJavaScript !== undefined) {
     pjs.bindJavaScript(this);
     bound = true; }
@@ -12,7 +13,9 @@ function bindJavaScript() {
 }
 
 // schedule binding
-bindJavaScript();
+window.onload = function(){
+  bindJavaScript();
+};
 
 function playSketch() {
 

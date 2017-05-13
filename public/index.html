@@ -17,9 +17,6 @@
 <script src = "controller/home.js"></script>
 
 
-<script src="web/processing.js"></script>
-<script src="web/javascript.js"></script>
-
 
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -27,7 +24,7 @@
     <![endif]-->
 </head>
 <body>
-   <div ui-view ng-app = "content" ></div>
+  <div ui-view ng-app = "app" ></div>
 
 
 <!-- <canvas id="canvas" width="2100" height="900" style="border: 1px solid #d3d3d3;">
@@ -35,7 +32,7 @@
   <draw-circle x="200" y="500"></draw-circle>
 </canvas> -->
 
-<!-- <div ng-app="app">
+<!--<div ng-app="app">
        <div class="container">
          <div class="row">
            <div class="col-6">
@@ -47,19 +44,20 @@
 
 <p>Index.html</p>
 
-<!--  <canvas id='dsanim' data-processing-sources="web/constants.pde web/animation.pde web/animationinstruction.pde web/animationobject.pde web/bubble.pde web/animatedcode.pde web/animatedarray.pde web/utils.pde web/indicator.pde web/splitter.pde web/controls.pde"></canvas>
+<!-- <canvas id='dsanim' data-processing-sources="web/constants.pde web/animation.pde web/animationinstruction.pde web/animationobject.pde web/bubble.pde web/animatedcode.pde web/animatedarray.pde web/utils.pde web/indicator.pde web/splitter.pde web/controls.pde"></canvas>
   <button onclick="playSketch();">Play</button>
 <button onclick="pauseSketch();">Pause</button>
 <button onclick="stepSketch();">Step</button>
 <button onclick="restartSketch();">restart</button>
-Speed:<input type="range" name="speed" min="1" max="10" value="5" onchange="changeSpeed(this.value)">
--->
-
+Speed:<input type="range" name="speed" min="1" max="10" value="5" onchange="changeSpeed(this.value)">-->
 <!--  <script src="processing.js"></script>
   <canvas data-processing-sources="hello.pde"></canvas> -->
 
 <!--  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script> -->
 
 <!-- <script language="javascript" type="text/javascript" src="sketch.js"></script> -->
+<script src="web/processing.js"></script>
+<script src="web/javascript.js"></script>
+
 </body>
 </html>
